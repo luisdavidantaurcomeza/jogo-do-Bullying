@@ -1,0 +1,159 @@
+/*
+App Dinosaur Game
+By iMarcaos (github)
+Project Started: 2021-03-05
+Update: 2023-04-14
+Version: v5-0323
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(252, 255, 48), rgb(84, 110, 255));
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(150, 0, 0);
+  }
+
+ /* Section */
+.game-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 90vh;
+    min-height: 400px;
+    padding: 110px 0;
+}
+
+ .game-header h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #1A0B38;
+}
+
+.game-main canvas {
+    background-color: #A6A6A6;
+    align-items: center;
+}
+
+.game-info {
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows:  1fr 1fr;
+    grid-template-areas: 
+                        "l1 r1"
+                        "l2 r1";
+}
+
+.game-info button {
+    color: rgb(28, 26, 58);
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 80px;
+    height: 22px;
+}
+
+.game-info #jumpPlayer {
+    grid-area: l1;
+}
+
+.game-info #downPlayer {
+    grid-area: l2;
+}
+
+.game-info p {
+    grid-area: r1;
+    text-align: center;
+    text-justify: auto;
+    font-size: 16px;
+    color: #1A0B38;
+}
+
+.version {
+    color: rgb(143, 143, 143);
+    text-align: right;
+    font-size: 0.8em;
+}
+
+/* Reponsive Section*/
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+    
+    /* Section */
+    .game-container {
+        height: 85vh;
+        margin: 90px 0;
+        padding: 100px 0;
+    }
+}
+
+
+
+/*
+App Dinosaur Game
+By iMarcaos (github)
+Project Started: 2021-03-13
+Update: 2023-04-14
+Version: v5-0323
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ #game-container {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 600px;
+ }
+
+ #game-header h2 {
+    text-align: center;
+    font-size: 37px;
+    color: #1A0B38;
+}
+
+#game-main canvas {
+    background-color: #A6A6A6;
+    align-items: center;
+}
+
+#game-footer {
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows:  1fr 1fr;
+    grid-template-areas: 
+                        "l1 r1"
+                        "l2 r1";
+}
+
+#game-footer button {
+    color: rgb(28, 26, 58);
+    font-weight: 600;
+    border-radius: 5px;
+    width: 70px;
+    height: 20px;
+}
+
+#game-footer #jumpPlayer {
+    grid-area: l1;
+}
+
+#game-footer #downPlayer {
+    grid-area: l2;
+}
+
+#game-footer p {
+    grid-area: r1;
+    text-align: center;
+    font-size: 18px;
+    color: #1A0B38;
+}*/
